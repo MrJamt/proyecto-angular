@@ -1,0 +1,64 @@
+{
+  "homeworks": [
+    {
+      "id": 1,
+      "title": "Ensayo sobre la Revolución Francesa",
+      "description": "Redactar un ensayo de 2 páginas explicando las causas y consecuencias de la Revolución Francesa.",
+      "status": "Pendiente"
+    },
+    {
+      "id": 2,
+      "title": "Ejercicios de álgebra",
+      "description": "Resolver los ejercicios del 15 al 30 del capítulo 4 del libro de Matemáticas.",
+      "status": "Completado"
+    },
+    {
+      "id": 3,
+      "title": "Presentación sobre energías renovables",
+      "description": "Preparar una presentación de 10 minutos sobre los diferentes tipos de energías renovables.",
+      "status": "En progreso"
+    },
+    {
+      "id": 4,
+      "title": "Lectura de 'Cien años de soledad'",
+      "description": "Leer los capítulos 1 al 5 del libro y realizar un resumen corto de cada uno.",
+      "status": "Pendiente"
+    },
+    {
+      "id": 5,
+      "title": "Informe de laboratorio de física",
+      "description": "Elaborar el informe del experimento sobre la ley de Hooke con conclusiones y gráficos.",
+      "status": "Completado"
+    },
+    {
+      "id": 6,
+      "title": "Mapa conceptual sobre la fotosíntesis",
+      "description": "Crear un mapa conceptual explicando el proceso completo de la fotosíntesis y sus fases.",
+      "status": "Pendiente"
+    },
+    {
+      "id": 7,
+      "title": "Diseño de base de datos",
+      "description": "Modelar una base de datos para una tienda en línea utilizando diagramas ER.",
+      "status": "En progreso"
+    },
+    {
+      "id": 8,
+      "title": "Cuestionario de historia del arte",
+      "description": "Responder las 20 preguntas del cuestionario sobre el arte renacentista en la plataforma virtual.",
+      "status": "Completado"
+    },
+    {
+      "id": 9,
+      "title": "Código de práctica en Python",
+      "description": "Desarrollar un programa que calcule el promedio de una lista de números ingresados por el usuario.",
+      "status": "En progreso"
+    },
+    {
+      "id": 10,
+      "title": "Trabajo grupal sobre cambio climático",
+      "description": "Realizar una investigación grupal sobre los impactos del cambio climático en América Latina.",
+      "status": "Pendiente"
+    }
+  ]
+}
