@@ -4,7 +4,7 @@
             LISTA DE TAREAS
         </h1>
         <button class="btn btn-primary shadow-sm mx-5" (click)="onAddHomework()">
-            <i class="bi bi-plus-lg me-1"></i> Agregar Tarea
+            Agregar Tarea
         </button>
     </div>
 </div>
@@ -34,8 +34,7 @@
                                 <td>{{ homework.status }}</td>
                                 <td>{{ homework.due_date }}</td>
                                 <td class="d-flex gap-2">
-                                    <button class="btn btn-warning btn-sm" (click)="onEditHomework(homework.id)"
-                                        [disabled]="isDeleting() === homework.id">
+                                    <button class="btn btn-warning btn-sm" (click)="onEditHomework(homework.id)">
                                         Editar
                                     </button>
                                     <button class="btn btn-danger btn-sm" (click)="onDeleteHomework(homework.id)"

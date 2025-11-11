@@ -2,10 +2,10 @@
   "homeworks": [
     {
       "id": "1",
-      "title": "Ensayo sobre la Revolución Francesa",
+      "title": "Ensayo sobre la Revolución Francesa!",
       "description": "Redactar un ensayo de 2 páginas explicando las causas y consecuencias de la Revolución Francesa.",
-      "status": "Pendiente",
-      "due_date": "2025-11-15"
+      "due_date": "2025-11-13",
+      "status": "En progreso"
     },
     {
       "id": "2",
@@ -71,14 +71,7 @@
       "due_date": "2025-11-25"
     },
     {
-      "id": "0",
-      "title": "Ejemplo",
-      "description": "este es un ejemplo",
-      "due_date": "2011-11-11",
-      "status": "Pendiente"
-    },
-    {
-      "id": 11,
+      "id": "11",
       "title": "Tarea 2",
       "description": "Esta es la tarea 2",
       "due_date": "2003-12-12",

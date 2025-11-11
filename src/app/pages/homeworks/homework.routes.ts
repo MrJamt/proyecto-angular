@@ -10,6 +10,10 @@ export const homeworkRoutes: Routes = [
     loadComponent: () => import('./components/homework-create/homework-create')
   },
   {
+    path: 'edit-homework/:id',
+    loadComponent: () => import('./components/homework-edit/homework-edit')
+  },    
+  {
     path: '**',
     redirectTo: ''
   }

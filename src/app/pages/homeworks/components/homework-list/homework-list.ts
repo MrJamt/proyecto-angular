@@ -24,7 +24,7 @@ export default class HomeworkList {
   }
 
   onEditHomework(id: number): void {
-    this.router.navigate(['/homeworks', id]);
+    this.router.navigate(['/homeworks/edit-homework', id]);
   }
 
   onDeleteHomework(id: number): void {
