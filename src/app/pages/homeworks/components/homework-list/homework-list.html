@@ -1,0 +1,58 @@
+<div class="row">
+    <div class="d-flex align-items-center justify-content-between mb-4 mt-5 border-bottom pb-2">
+        <h1 class="h3 fw-semibold mb-0 ml-5">
+            LISTA DE TAREAS
+        </h1>
+        <button class="btn btn-primary shadow-sm mx-5" (click)="onAddHomework()">
+            <i class="bi bi-plus-lg me-1"></i> Agregar Tarea
+        </button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <div class="row">
+                <div class="col">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Titulo</th>
+                                <th scope="col">Descripción</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Fecha de Vencimiento</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (homework of homeworks$ | async; track homework.id) {
+                            <tr>
+                                <th scope="row">{{ homework.id }}</th>
+                                <td>{{ homework.title | titlecase }}</td>
+                                <td>{{ homework.description }}</td>
+                                <td>{{ homework.status }}</td>
+                                <td>{{ homework.due_date }}</td>
+                                <td class="d-flex gap-2">
+                                    <button class="btn btn-warning btn-sm" (click)="onEditHomework(homework.id)"
+                                        [disabled]="isDeleting() === homework.id">
+                                        Editar
+                                    </button>
+                                    <button class="btn btn-danger btn-sm" (click)="onDeleteHomework(homework.id)"
+                                        [disabled]="isDeleting() === homework.id">
+                                        {{ isDeleting() === homework.id ? 'Eliminando...' : 'Eliminar' }}
+                                    </button>
+                                </td>
+                            </tr>
+                            } @empty {
+                            <tr>
+                                <td colspan="6" class="text-center">No hay tareas registradas</td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

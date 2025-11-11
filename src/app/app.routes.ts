@@ -7,7 +7,7 @@ export const routes: Routes = [
     },
     {
         path: 'homeworks',
-        loadComponent: () => import('./pages/homeworks/homeworks')
+        loadChildren: () => import('./pages/homeworks/homework.routes')
     },
     {
         path: '**',
